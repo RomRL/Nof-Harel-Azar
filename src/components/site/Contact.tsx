@@ -131,13 +131,16 @@ export default function Contact() {
                 <div className="font-medium">להודעה מהירה</div>
               </div>
             </a>
-            <div className="flex items-center gap-4 glass rounded-2xl p-5 shadow-soft">
+            <a
+              href={`mailto:romharel98@gmail.com?subject=${encodeURIComponent("פנייה דרך האתר")}&body=${encodeURIComponent("שלום נוף הראל,\n\nהגעתי דרך האתר ואשמח לשמוע פרטים נוספים על הליווי ולתאם שיחת היכרות.\n\nתודה,")}`}
+              className="flex items-center gap-4 glass rounded-2xl p-5 shadow-soft hover:-translate-y-0.5 transition"
+            >
               <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-peach to-rose grid place-items-center text-primary-foreground"><Mail size={18} /></div>
               <div>
                 <div className="text-xs text-muted-foreground">אימייל</div>
-                <div className="font-medium">romharel98@gmail.com</div>
+                <div className="font-medium" dir="ltr">romharel98@gmail.com</div>
               </div>
-            </div>
+            </a>
             <div className="glass rounded-2xl p-5 shadow-soft">
               <div className="flex items-center gap-3 mb-3">
                 <MapPin size={18} className="text-rose" />

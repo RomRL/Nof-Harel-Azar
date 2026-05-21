@@ -36,7 +36,15 @@ export default function Footer() {
             <ul className="space-y-2 text-sm text-foreground/70">
               <li>קריות · חיפה · אונליין</li>
               <li dir="ltr" className="text-right">+972 54 75 75 612</li>
-              <li>romharel98@gmail.com</li>
+              <li>
+                <a
+                  href={`mailto:romharel98@gmail.com?subject=${encodeURIComponent("פנייה דרך האתר")}&body=${encodeURIComponent("שלום נוף הראל,\n\nהגעתי דרך האתר ואשמח לשמוע פרטים נוספים על הליווי ולתאם שיחת היכרות.\n\nתודה,")}`}
+                  className="hover:text-foreground transition"
+                  dir="ltr"
+                >
+                  romharel98@gmail.com
+                </a>
+              </li>
               <li><a href="#" className="hover:text-foreground transition">הצהרת נגישות</a></li>
             </ul>
           </div>
